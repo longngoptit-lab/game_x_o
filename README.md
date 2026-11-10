@@ -47,7 +47,9 @@ iPhone thật cần chọn Apple Development Team của bạn trong Xcode. Bản
 - [Cách đăng nhập và đẩy lên GitHub](docs/GITHUB.md).
 - [Kết quả kiểm tra và giới hạn hiện tại](docs/VALIDATION.md).
 
-Các file Firebase được commit là placeholder `demo-game-x-o`, không kết nối dịch vụ của tác giả gốc. Cấu hình tài khoản riêng bằng:
+Cấu hình Android/iOS đã gắn vào Firebase project **`game-x-o-71dd5`** của bạn. [Bản APK trên App Distribution](https://console.firebase.google.com/project/game-x-o-71dd5/appdistribution/app/android:com.longngoptit.gamexo/releases/1hnbg5a5ffu40). Mặc định vẫn chơi offline. Để bật đăng nhập/dữ liệu online, cần khởi tạo Authentication và Realtime Database như trong hướng dẫn Firebase.
+
+Để chuyển project hoặc lấy lại cấu hình sau khi tạo database:
 
 ```bash
 bash scripts/configure_firebase.sh YOUR_PROJECT_ID
@@ -55,3 +57,9 @@ flutter run --dart-define=OFFLINE_MODE=false
 ```
 
 Phần online kế thừa từ [WRTeam-in/tic-tac-toe](https://github.com/WRTeam-in/tic-tac-toe); cần hoàn tất cấu hình và kiểm thử backend trước khi phát hành. Không có bản web trong checkout này.
+
+Upload bản chơi thử tiếp theo lên Firebase:
+
+```bash
+bash scripts/distribute_android.sh
+```

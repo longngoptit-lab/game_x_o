@@ -30,6 +30,11 @@ Ngày kiểm tra: 09–10/11/2026 (Asia/Ho_Chi_Minh).
 - APK debug Android: đã build thành công; `com.longngoptit.gamexo`, version `2.1.0+17`, min SDK 24, target SDK 36. Đã đọc metadata của APK bằng Android aapt.
 - Integration test native trên iPhone 17 Pro / iOS 26.3: **đạt**; tự động mở app, chơi trọn một ván hai người và trở về trang chủ. Đã sửa bước chờ tải màn hình trong test để dùng được với I/O thực của thiết bị.
 
+## CI và Firebase
+
+- [GitHub Actions: checks và build APK trên máy sạch đều đạt](https://github.com/longngoptit-lab/game_x_o/actions/runs/42754553656). Đã sửa lỗi Jetifier làm hết Java heap khi xử lý thư viện Flutter.
+- APK dùng cấu hình Firebase của bạn đã build và upload thành công lên App Distribution.
+
 ## Chưa kiểm chứng
 
-Firebase project thật, đăng nhập Google/Apple, multiplayer hai thiết bị, coin/IAP, quảng cáo, upload avatar, release có khóa ký, Google Play/App Store và iPhone thật. Không suy ra những tính năng này đã hoạt động từ kết quả test offline. Đọc [hướng dẫn Firebase](FIREBASE.md) trước khi bật online.
+Đã xác nhận đăng ký app Android/iOS, sinh cấu hình và upload App Distribution trên project thật `game-x-o-71dd5`. Authentication và Realtime Database chưa khởi tạo nên chưa kiểm chứng đăng nhập hoặc dữ liệu online. Các mục chưa kiểm chứng khác: Google/Apple Sign-In, multiplayer hai thiết bị, coin/IAP, quảng cáo, upload avatar, release có khóa ký, Google Play/App Store, iPhone thật và chạy APK trên thiết bị Android thật. Không suy ra những tính năng này đã hoạt động từ kết quả test offline. Đọc [hướng dẫn Firebase](FIREBASE.md) trước khi bật online.

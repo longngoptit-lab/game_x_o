@@ -11,7 +11,7 @@ GitHub CLI đã cài tại `~/.local/bin/gh` trên máy này. Đăng nhập nế
 
 Không gửi token/mật khẩu trong chat. Đăng nhập bằng trình duyệt của bạn.
 
-Checkout ban đầu trỏ `WRTeam-in/tic-tac-toe`. Lịch sử cũ có file `android/key.properties`, vì vậy bản public cần lịch sử sạch, không đẩy trực tiếp toàn bộ lịch sử đó. File ký và cấu hình công cụ cá nhân được giữ trên máy, loại khỏi Git. Các cấu hình Firebase hiện tại là placeholder.
+Checkout ban đầu trỏ `WRTeam-in/tic-tac-toe`. Lịch sử cũ có file `android/key.properties`, vì vậy bản public cần lịch sử sạch, không đẩy trực tiếp toàn bộ lịch sử đó. File ký và cấu hình công cụ cá nhân được giữ trên máy, loại khỏi Git. Cấu hình Firebase client hiện tại trỏ project `game-x-o-71dd5`; không có service-account key hoặc khóa ký trong repo.
 
 Repo public dùng lịch sử mới để không đưa cấu hình ký từ lịch sử cũ lên mạng. Các nhánh gốc vẫn được giữ trong checkout cũ. Clone repo mới để tiếp tục làm việc:
 

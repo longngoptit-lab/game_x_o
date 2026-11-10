@@ -50,21 +50,18 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDEMO00000000000000000000000000000',
-    appId: '1:1234567890:android:0000000000000000000000',
-    messagingSenderId: '1234567890',
-    projectId: 'demo-game-x-o',
-    databaseURL: 'https://demo-game-x-o-default-rtdb.firebaseio.com',
-    storageBucket: 'demo-game-x-o.appspot.com',
+    apiKey: 'AIzaSyAl0wlSNlouHC0JudnaEhIu75km5vHwRXw',
+    appId: '1:800796039130:android:b7347ce900f673013452e3',
+    messagingSenderId: '800796039130',
+    projectId: 'game-x-o-71dd5',
+    storageBucket: 'game-x-o-71dd5.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDEMO00000000000000000000000000000',
-    appId: '1:1234567890:ios:0000000000000000000000',
-    messagingSenderId: '1234567890',
-    projectId: 'demo-game-x-o',
-    databaseURL: 'https://demo-game-x-o-default-rtdb.firebaseio.com',
-    storageBucket: 'demo-game-x-o.appspot.com',
+    apiKey: 'AIzaSyBHEpvOJp7rxZ2PptpzcwpX2OrAHoKYuyw',
+    appId: '1:800796039130:ios:f867ab0ac9469d0b3452e3',
+    messagingSenderId: '800796039130',
+    projectId: 'game-x-o-71dd5',
+    storageBucket: 'game-x-o-71dd5.firebasestorage.app',
     iosBundleId: 'com.longngoptit.gamexo',
   );
 }

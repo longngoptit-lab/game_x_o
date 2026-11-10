@@ -1,1 +1,1 @@
-{}
+{"flutter":{"platforms":{"android":{"default":{"projectId":"game-x-o-71dd5","appId":"1:800796039130:android:b7347ce900f673013452e3","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"game-x-o-71dd5","appId":"1:800796039130:ios:f867ab0ac9469d0b3452e3","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"game-x-o-71dd5","configurations":{"android":"1:800796039130:android:b7347ce900f673013452e3","ios":"1:800796039130:ios:f867ab0ac9469d0b3452e3"}}}}}}

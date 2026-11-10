@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "1234567890",
-    "firebase_url": "https://demo-game-x-o-default-rtdb.firebaseio.com",
-    "project_id": "demo-game-x-o",
-    "storage_bucket": "demo-game-x-o.appspot.com"
+    "project_number": "800796039130",
+    "project_id": "game-x-o-71dd5",
+    "storage_bucket": "game-x-o-71dd5.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1234567890:android:0000000000000000000000",
+        "mobilesdk_app_id": "1:800796039130:android:b7347ce900f673013452e3",
         "android_client_info": {
           "package_name": "com.longngoptit.gamexo"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDEMO00000000000000000000000000000"
+          "current_key": "AIzaSyAl0wlSNlouHC0JudnaEhIu75km5vHwRXw"
         }
       ],
       "services": {

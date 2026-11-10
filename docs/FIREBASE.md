@@ -1,5 +1,14 @@
 # Firebase của bạn
 
+## Trạng thái đã thiết lập
+
+- Project đang dùng: **`game-x-o-71dd5`** ([mở Console](https://console.firebase.google.com/project/game-x-o-71dd5/overview)).
+- Đã đăng ký Android và iOS với ID `com.longngoptit.gamexo`, sinh đầy đủ cấu hình Flutter/native.
+- Đã upload APK **2.1.0 (17)** lên [App Distribution](https://console.firebase.google.com/project/game-x-o-71dd5/appdistribution/app/android:com.longngoptit.gamexo/releases/1hnbg5a5ffu40).
+- Bản APK mặc định chơi offline. Authentication và Realtime Database chưa khởi tạo tại thời điểm kiểm tra cuối. Để dùng online: bấm **Get started** trong Authentication; tạo Realtime Database tại **Hoa Kỳ** theo lựa chọn của bạn, chọn **Locked mode**, rồi chạy lại `bash scripts/configure_firebase.sh game-x-o-71dd5` để lấy Database URL. Sau đó hoàn tất providers và rules theo các mục bên dưới.
+
+Upload bản offline tiếp theo bằng `bash scripts/distribute_android.sh`. Script đọc Project ID và App ID từ cấu hình native, build APK rồi upload. Việc thêm tester được thực hiện trong Firebase Console.
+
 ## Cách nhanh nhất: gửi APK chạy offline
 
 Firebase App Distribution cho phép tải APK lên để cài thử. Không cần chuyển game sang online, không cần mua domain hay Firebase Hosting.
@@ -20,7 +29,7 @@ firebase appdistribution:distribute build/app/outputs/flutter-apk/app-debug.apk 
   --release-notes 'game_x_o — offline preview'
 ```
 
-Không có lệnh upload nào đã được chạy cho tài khoản của bạn. Firebase CLI và FlutterFire CLI đã được cài trên máy; bạn tự đăng nhập trong trình duyệt. Tham khảo [hướng dẫn App Distribution chính thức](https://firebase.google.com/docs/app-distribution/android/distribute-cli).
+APK 2.1.0 (17) đã được upload vào project `game-x-o-71dd5`. Firebase CLI và FlutterFire CLI đã được cài và đăng nhập trên máy. Tham khảo [hướng dẫn App Distribution chính thức](https://firebase.google.com/docs/app-distribution/android/distribute-cli).
 
 ## Kết nối tính năng online với project riêng
 
@@ -42,7 +51,7 @@ Script đăng nhập Google, đăng ký app Android/iOS, sinh `lib/firebase_opti
 flutter run --dart-define=OFFLINE_MODE=false
 ```
 
-Các nút online hiện lại khi tắt offline mode. Chỉ chạy bước này sau khi cấu hình xong project thật; `demo-game-x-o` trong Git chỉ là placeholder.
+Các nút online hiện lại khi tắt offline mode. Chỉ chạy bước này sau khi cấu hình xong Authentication, Database URL và rules. Checkout hiện tại đã trỏ project `game-x-o-71dd5`.
 
 ## Quyền dữ liệu và phần chưa được xác minh
 
