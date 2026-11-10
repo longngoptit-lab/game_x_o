@@ -4,6 +4,17 @@ import 'package:game_x_o/main.dart' as app;
 import 'package:game_x_o/features/game/widgets/tile_box_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+Future<void> waitFor(WidgetTester tester, Finder finder) async {
+  final stopwatch = Stopwatch()..start();
+  while (finder.evaluate().isEmpty) {
+    if (stopwatch.elapsed > const Duration(seconds: 30)) {
+      fail('Timed out waiting for $finder');
+    }
+    await tester.pump(const Duration(milliseconds: 100));
+  }
+  await tester.pumpAndSettle();
+}
+
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
@@ -12,7 +23,7 @@ void main() {
     await preferences.setBool('soundEnabled', false);
     await preferences.setString('languageCode', 'en');
     await app.main([]);
-    await tester.pumpAndSettle();
+    await waitFor(tester, find.text('Play Now'));
     expect(find.text('Play Now'), findsNWidgets(2));
     await tester.tap(find.text('Play Now').last);
     await tester.pumpAndSettle();
@@ -23,8 +34,7 @@ void main() {
       await tester.tap(find.byType(TileBoxWidget).at(cell));
       await tester.pump(const Duration(milliseconds: 300));
     }
-    await tester.pump(const Duration(seconds: 4));
-    await tester.pumpAndSettle();
+    await waitFor(tester, find.text('Game Over'));
     expect(find.text('Game Over'), findsOneWidget);
     await tester.tap(find.text('Cancel'));
     await tester.pumpAndSettle();

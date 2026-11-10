@@ -28,7 +28,7 @@ Ngày kiểm tra: 09–10/11/2026 (Asia/Ho_Chi_Minh).
 
 - iOS Simulator x86_64: đã build, cài và mở thành công trên iPhone 17 Pro / iOS 26.3. Đã kiểm tra ảnh chụp màn hình trang chủ.
 - APK debug Android: đã build thành công; `com.longngoptit.gamexo`, version `2.1.0+17`, min SDK 24, target SDK 36. Đã đọc metadata của APK bằng Android aapt.
-- Integration test native: đang chuẩn bị chạy.
+- Integration test native trên iPhone 17 Pro / iOS 26.3: **đạt**; tự động mở app, chơi trọn một ván hai người và trở về trang chủ. Đã sửa bước chờ tải màn hình trong test để dùng được với I/O thực của thiết bị.
 
 ## Chưa kiểm chứng
 
