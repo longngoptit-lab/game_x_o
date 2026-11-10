@@ -1,0 +1,5 @@
+package com.longngoptit.gamexo
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()

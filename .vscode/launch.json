@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "game_x_o — Offline",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": ["--dart-define=OFFLINE_MODE=true"]
+    },
+    {
+      "name": "game_x_o — Firebase",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": ["--dart-define=OFFLINE_MODE=false"]
+    }
+  ]
+}
